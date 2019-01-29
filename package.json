@@ -1,0 +1,15 @@
+{
+  "name": "planet-clean",
+  "version": "1.0.0",
+  "description": "Purge blog feed links that don't work anymore",
+  "bin": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "davefeedread": "^0.5.1",
+    "jsdom": "^12.2.0"
+  }
+}
