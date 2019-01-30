@@ -9,7 +9,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "davefeedread": "^0.5.1",
+    "axios": "^0.18.0",
+    "davefeedread": "^0.5.2",
     "jsdom": "^12.2.0"
   }
 }

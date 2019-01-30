@@ -64,16 +64,7 @@ axios
         return Promise.all(feeds.map(feed => new Promise(resolve => {  
             const url = feed.url;
 
-            // XXX: deal with callback double firing, see:
-            // https://github.com/scripting/feedRead/issues/3
-            let ignoreCallback = false
-
             feedRead.parseUrl (url, timeOutSecs, err => { 
-                if(ignoreCallback) {
-                    return;
-                }
-                ignoreCallback = true;
-
                 if(err) {
                     feed.reason = `Feed excluded, error was: ${err.message}`;
                     failingFeeds.push(`#${feed.reason}\n#[${feed.url}]\n#name=${feed.name}\n\n`);
